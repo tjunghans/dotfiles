@@ -1,0 +1,14 @@
+{
+  "predef": [
+    "window",
+    "document",
+    "$"
+  ],
+  "indent": 2,
+  "maxlen": 80,
+  "node": true,
+  "plusplus": true,
+  "vars": true,
+  "nomen": true,
+  "stupid": true
+}
