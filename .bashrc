@@ -3,18 +3,7 @@ alias la='ls -la'
 alias l='ls -CF'  
 
 # git command aliases
-alias gch='git checkout'
-alias gbr='git branch'
-alias gs='git status'
-alias gcd='git checkout develop'
-alias gcm='git checkout master'
-alias gph='git push'
-alias gpl='git pull'
-alias grf='git reset HEAD --'
-alias ga='git add --all .'
-alias gau='git add -u .'
-alias gcam='git commit -a -m'
-alias gc='git commit -a'
+source "./.git-aliases"
 
 function parse_git_branch() {
   local NAME=`git symbolic-ref --short HEAD 2>/dev/null`
