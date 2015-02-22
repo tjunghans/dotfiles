@@ -1,9 +1,26 @@
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+
+# Aliases
 alias ll='ls -l'
-alias la='ls -la'                     
-alias l='ls -CF'  
+alias la='ls -la'
+alias l='ls -CF'
+alias bashrc='vim ~/.bashrc'
+alias vimrc='vim ~/.vimrc'
+alias ll='ls -al'
+alias v='vim'
+alias n='node'
+alias down='cd ~/Downloads'
+alias desk='cd ~/Desktop'
+alias proj='cd ~/Projects'
+
+
+# Globals
+export EDITOR=$(which vim)
+
 
 # git command aliases
-source "./.git-aliases"
+source "$DIR/.git-aliases"
 
 function parse_git_branch() {
   local NAME=`git symbolic-ref --short HEAD 2>/dev/null`
