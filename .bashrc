@@ -2,12 +2,8 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 
 # Aliases
-alias ll='ls -l'
-alias la='ls -la'
-alias l='ls -CF'
 alias bashrc='vim ~/.bashrc'
 alias vimrc='vim ~/.vimrc'
-alias ll='ls -al'
 alias v='vim'
 alias n='node'
 alias down='cd ~/Downloads'
