@@ -1,5 +1,7 @@
-DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+export TERM='xterm-256color'
+export CLICOLOR=1
 
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 # Aliases
 alias bashrc='vim ~/.bashrc'
@@ -10,10 +12,8 @@ alias down='cd ~/Downloads'
 alias desk='cd ~/Desktop'
 alias proj='cd ~/Projects'
 
-
 # Globals
 export EDITOR=$(which vim)
-
 
 # git command aliases
 source "$DIR/.git-aliases"
