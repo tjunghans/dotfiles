@@ -17,6 +17,7 @@ export EDITOR=$(which vim)
 
 # git command aliases
 source "$DIR/.git-aliases"
+source "$DIR/.local-aliases"
 
 function parse_git_branch() {
   local NAME=`git symbolic-ref --short HEAD 2>/dev/null`

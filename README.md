@@ -1,4 +1,4 @@
-TJ's dotfiles
+My dotfiles
 ========
 
 See http://dotfiles.github.io/ for more information.
